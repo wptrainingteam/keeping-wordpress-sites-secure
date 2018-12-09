@@ -8,7 +8,7 @@ In this lesson, you will learn how to keep your WordPress site secure. You may a
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-*   [Basic knowledge of WordPress.](https://make.wordpress.org/training/handbook/user-lessons/basic-wordpress-concepts/)
+*   Basic knowledge of WordPress.
 *   Basic knowledge of HTML.
 
 ## Objectives
@@ -71,7 +71,7 @@ Each program comes with a different idea of how often they need to be run; month
 
 ### Use Reputible Hosting
 
-(Needs to be drafted)
+Hosting providers are responsible for protecting the security of their clients at the server level. Your host should be proactively searching for and plugging security holes. This is particularly important on low-budget "shared hosting" providers where hundreds or thousands of sites share the same server. In some situations, one "bad neighbor" can cause all of the sites to get hacked - even if you did everything right. That's why picking the right host is so important.
 
 ### Use WordPress Security Plugins
 

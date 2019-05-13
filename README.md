@@ -84,6 +84,9 @@ There are various plugins available through WordPress which are exclusively for 
 *   [Acunetix WP Security](https://wordpress.org/plugins/wp-security-scan/): The Acunetix plugin helps to secure your WordPress website and will suggest various guidelines to improve the security of your site.
 *   [All In One WP Security & Firewall](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/): All In One is great for checking for any vulnerabilities on your site and it is easy to use. It will protect against hackers and goes into lockdown if someone tries to use brute force on your site. There is a cost attached to this plugin.
 
+*  [Source Code Protection](https://wordpress.org/plugins/wp-code-protection/): Source Code Protection is a simple and effective plugin that uses to prevent common techniques in protecting your code from being stolen. Disable the following keys CTRL+A, CTRL+C, CTRL+X,CTRL+S or CTRL+V. No one can right click images on your site if you want.
+
+
 _**Be vigilant!**_ By being proactive and taking a few steps of preparation for security's sake you can keep your site safe and enjoy some peace of mind.    
 
 ## Exercises

@@ -189,15 +189,15 @@ Via command line you can run the following commands to change permissions recurs
 
 For Directories:
 
-[code]
+<pre>
 find /path/to/your/wordpress/install/ -type d -exec chmod 750 {} \;
-[/code]
+</pre>
 
 For Files:
 
-[code]
+<pre>
 find /path/to/your/wordpress/install/ -type f -exec chmod 640 {} \;
-[/code]
+</pre>
 
 You can also do this via your favorite FTP/SFTP client.
 
@@ -207,22 +207,20 @@ For a detailed explanation of unix file permissions, see <a rel="nofollow" class
 
 If you use a server with .htaccess, you can put this in that file (at the very top) to deny access to anyone surfing for it:
 
-[code]
+<pre>
 <files wp-config.php>
 order allow,deny
 deny from all
 </files>
-[/code]
+</pre>
 
 ## Disable File Editing
 
 Recommended to disable file editing within the WordPress dashboard. WordPress has a constant that disables this editing via the wp-config.php file. Append the following two lines to the middle of your wp-config file, with all the other defines. The require_once line should always remain last in the file:
 
-[code]
 <pre>## Disable Editing in Dashboard
 define('DISALLOW_FILE_EDIT', true);
 </pre>
-[/code]
 
 ### Lesson Wrap Up
 

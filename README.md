@@ -1,15 +1,10 @@
 # Keeping WordPress Sites Secure
 
+Below is a list of elements found in each learning module, and a brief description of each. To keep WordPress Sites safe and secure, ensure that it contains each of these elements.
+
 ## Description
 
 In this lesson, you will learn how to keep your WordPress site secure. You may ask yourself, "Do I even need to worry about keeping my WordPress site secure?" And the answer would be, "Yes!" Most people think that they could never be hacked, but you will find that it can happen to anyone. By taking a few precautions you will gain not only security but a fair measure of peace of mind.
-
-## Prerequisite Skills
-
-You will be better equipped to work through this lesson if you have experience in and familiarity with:
-
-*   Basic knowledge of WordPress.
-*   Basic knowledge of HTML.
 
 ## Objectives
 
@@ -19,15 +14,58 @@ After completing this lesson, you will be able to:
 *   Explain various ways of keeping your site secure.
 *   Demonstrate what must be done in order to keep your WordPress site safe from hackers.
 
-## Assets
+## Target Audience
 
-## Screening Questions
+Who is this lesson intended for? What interests/skills would they bring? Choose all that apply.
+
+* [ ] Users
+* [X] Designers
+* [X] Developers
+* [X] Speakers
+* [ ] All
+
+## Experience Level
+
+How much experience would a participant need to get the most from this lesson?
+
+* [x] Beginner
+* [x] Intermediate
+* [ ] Advanced
+* [ ] Any
+
+## Type of Instruction
+
+Which strategies will be used for this lesson plan? Choose all that apply.
+
+* [X] Demonstration
+* [ ] Discussion
+* [X] Exercises
+* [ ] Feedback
+* [x] Lecture (Presentation)
+* [x] Show & Tell
+* [ ] Tutorial
+
+## Time Estimate (Duration)
+
+How long will it take to teach this lesson (in minutes)?
+
+45 minutes
+
+## Prerequisite Skills
+
+You will be better equipped to work through this lesson if you have experience in and familiarity with:
+
+*   Basic knowledge of WordPress.
+*   Basic knowledge of HTML.
+
+
+## Readiness Questions
 
 *   Do you have a working WordPress site?
 *   Are you familiar with using the dashboard on your site?
 *   Do you have Anti-Malware in place to protect your computer?
 
-## Teacher Notes
+## Notes for the Instructor
 
 *   Take the time to familiarize yourself with the various WordPress security plugins.
 
@@ -54,6 +92,8 @@ Another item that we must consider is passwords. It is important to maintain a s
 A strong password should include capital letters, lowercase letters, a number and/or a symbol of some type. _**DO NOT**_ use the same password for every instance that you need one.  
 
 It would also be wise to change your password frequently. There are tools available to help you create strong passwords as well as tools to keep track of all your passwords. 
+
+Also, add 2FA Authentication for the login as well, it will help to make  your system more robust.
 
 ### Keep WordPress updates current
 
@@ -87,7 +127,13 @@ There are various plugins available through WordPress which are exclusively for 
 *  [Source Code Protection](https://wordpress.org/plugins/wp-code-protection/): Source Code Protection is a simple and effective plugin that uses to prevent common techniques in protecting your code from being stolen. Disable the following keys CTRL+A, CTRL+C, CTRL+X,CTRL+S or CTRL+V. No one can right click images on your site if you want.
 
 
-_**Be vigilant!**_ By being proactive and taking a few steps of preparation for security's sake you can keep your site safe and enjoy some peace of mind.    
+_**Be vigilant!**_ By being proactive and taking a few steps of preparation for security's sake you can keep your site safe and enjoy some peace of mind.  
+
+## Lesson Overview
+
+* Demonstrate points how you can make more safe your WordPress site
+* Follow all the steps or points that make sure to setup WordPress site.
+* Practice exercises to and add any WordPress security plugin to more secure your WordPress site.
 
 ## Exercises
 
@@ -95,7 +141,7 @@ _**Be vigilant!**_ By being proactive and taking a few steps of preparation for 
 *   Create a new password for your site.
 *   Research the various WordPress plugins and decide what will work best for you.
 
-## Quiz
+## Assessment
 
 **Write out the question.**
 
@@ -110,3 +156,74 @@ _**Be vigilant!**_ By being proactive and taking a few steps of preparation for 
 ## Additional Resources
 
 [Hardening WordPress](https://codex.wordpress.org/Hardening_WordPress) @ Codex
+
+## Example Lesson
+
+## 2FA Authentication
+
+When working with any online site, consider enabling 2FA by default. Refer to <a href="https://codex.wordpress.org/Two_Step_Authentication" title="Two Step Authentication">Two Step Authentication</a> for more information.
+
+Some WordPress plugins designed to help include:
+
+<ul><li><a rel="nofollow" class="external text" href="https://wordpress.org/plugins/authy-two-factor-authentication/">Authy</a></li>
+<li><a rel="nofollow" class="external text" href="https://wordpress.org/plugins/duo-wordpress/">Duo</a> </li>
+<li><a rel="nofollow" class="external text" href="https://wordpress.org/plugins/rublon/">Rublon</a></li>
+<li><a rel="nofollow" class="external text" href="https://wordpress.org/plugins/two-factor/">Two-Factor</a></li></ul>
+
+## File Permissions
+
+The default permission scheme should be:
+
+Folders - 750
+Files - 640
+
+There a number of ways to accomplish this change. There are also a number of variations to these permissions that include changing them to be more restrictive. These however are the default recommendations. Check with your host before making permissions changes as they can have adverse affects on the performance and availability of your site.
+
+Avoid having any file or directory set to 777.
+
+You can read more about WordPress updates and file ownership on the <a rel="nofollow" class="external text" href="https://codex.wordpress.org/Updating_WordPress#File_Ownership">Updating WordPress</a> codex page.
+
+Changing file permissions
+
+Via command line you can run the following commands to change permissions recursively:
+
+For Directories:
+
+[code]
+find /path/to/your/wordpress/install/ -type d -exec chmod 750 {} \;
+[/code]
+
+For Files:
+
+[code]
+find /path/to/your/wordpress/install/ -type f -exec chmod 640 {} \;
+[/code]
+
+You can also do this via your favorite FTP/SFTP client.
+
+For a detailed explanation of unix file permissions, see <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/File_system_permissions">File system permissions - Wikipedia</a>
+
+## WP-Config.php
+
+If you use a server with .htaccess, you can put this in that file (at the very top) to deny access to anyone surfing for it:
+
+[code]
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+[/code]
+
+## Disable File Editing
+
+Recommended to disable file editing within the WordPress dashboard. WordPress has a constant that disables this editing via the wp-config.php file. Append the following two lines to the middle of your wp-config file, with all the other defines. The require_once line should always remain last in the file:
+
+[code]
+<pre>## Disable Editing in Dashboard
+define('DISALLOW_FILE_EDIT', true);
+</pre>
+[/code]
+
+### Lesson Wrap Up
+
+![](https://raw.githubusercontent.com/wptrainingteam/contributor-resources/master/images/lightbulb.png) Follow with the Exercises and Assessment outlined above.

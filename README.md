@@ -35,29 +35,39 @@ After completing this lesson, you will be able to:
 
 Why, you may wonder, must we talk about security? And the answer would be because staying aware and on top of or ahead of problems will save a whole lot of stress and heartache later. Don’t ever think, "It couldn't happen to me.", because it can certainly happen to anyone.
 
-Most of us would like to believe the best in people, but lest we be thought naive let us be prepared for the very worst and hope for the very best. Hackers are not looking for the long drawn-out battle in order to gain access to any site. They target sites that are exposed and defenceless; those that display security holes. 
+Most of us would like to believe the best in people, but lest we be thought naive let us be prepared for the very worst and hope for the very best. Hackers are not looking for the long drawn-out battle in order to gain access to any site. They target sites that are exposed and defenceless; those that display security holes.
 
-You can basically block almost any and every attack by simply addressing the security issues and putting measures in place to stop them. 
+You can basically block almost any and every attack by simply addressing the security issues and putting measures in place to stop them.
 
 ### Sign in and sign out
 
 One of the easiest, but most important ways of keeping your site secure is to be sure that you always log out of your site when you are finished. This is the simplest safety measure of all, but the one that most of us fail to do. 
 
-This is extremely important for you to remember if you are working from a shared or public computer. If you fail to log out anyone is able to access your account just by going back and viewing your browser history. If they do so, they will be able to access your WordPress.com Dashboard as well. 
+This is extremely important for you to remember if you are working from a shared or public computer. If you fail to log out anyone is able to access your account just by going back and viewing your browser history. If they do so, they will be able to access your WordPress.com Dashboard as well.
 
-Always be sure to protect your account by signing out every time you are finished working. To do so;  all you need do is click on your Gravatar in the upper right corner, this will open your Profile page, and then you hit the "sign out button" in the left corner under your Gravatar. Or, If you are on your blog dashboard you can hover over your Gravatar on the gray toolbar at the top right and click  "Sign Out". 
+Always be sure to protect your account by signing out every time you are finished working. To do so;  all you need do is click on your Gravatar in the upper right corner, this will open your Profile page, and then you hit the "sign out button" in the left corner under your Gravatar. Or, If you are on your blog dashboard you can hover over your Gravatar on the gray toolbar at the top right and click  "Sign Out".
+
+If you still feel that you may forget to sign out from the WordPress. Alternatively, You can use the plugin ["Inactive Logout"](https://wordpress.org/plugins/inactive-logout/). The plugin will make sure to automatically terminate unattended idle WordPress user sessions after certain amount of time. You can customize the idle time in the plugin setting page.
+
+### Use Unique Username
+
+You may wonder why you need to choose a unique username? With the release of WordPress 3.0 in 2010, WordPress introduced a feature to choose a custom username while installing WordPress, which ended up in people choosing "Admin" as their default username.
+
+In a short amount of time "Admin" username got so popular, that hackers have started to built botnets with capabilities to login into the WordPress website using "admin" username and a list of common passwords.
+
+So here's what Matt Mullenweg (WordPress co-founder) recommends, if you are still using "admin" as your WordPress username, change it right away. Make sure to use a unique username. It is really important to use a username that is unique.
 
 ### Use Strong Passwords
 
-Another item that we must consider is passwords. It is important to maintain a strong password. Having a weak password will allow a hacker to gain access to your website easily. 
+Another item that we must consider is passwords. It is important to maintain a strong password. Having a weak password will allow a hacker to gain access to your website easily.
 
 A strong password should include capital letters, lowercase letters, a number and/or a symbol of some type. _**DO NOT**_ use the same password for every instance that you need one.  
 
-It would also be wise to change your password frequently. There are tools available to help you create strong passwords as well as tools to keep track of all your passwords. 
+It would also be wise to change your password frequently. There are tools available to help you create strong passwords as well as tools to keep track of all your passwords.
 
 ### Keep WordPress updates current
 
-Next, it is necessary to keep your WordPress updates current; this is of utmost importance. WordPress is very quick to keep their updates current. They are equally quick to fix security problems that arise. In order for these updates and security measures to work for you though you must be utilizing them. Be responsible in keeping your own site up-to-date. 
+Next, it is necessary to keep your WordPress updates current; this is of utmost importance. WordPress is very quick to keep their updates current. They are equally quick to fix security problems that arise. In order for these updates and security measures to work for you though you must be utilizing them. Be responsible in keeping your own site up-to-date.
 
 ### Guard your information
 
@@ -65,11 +75,11 @@ Always be careful of whom you give your information to. Once again; be prepared
 
 ### Use Anti-Malware
 
-Anti-malware is a must; not only for the safety of your computer but also for the safety of your WordPress site. There are a variety of anti-malware products available and you must decide which one will work best for your situation. Some are continuously working in the background; keeping your computer and site safe. Others will need to be periodically run to check for any form of malware that may be lurking. 
+Anti-malware is a must; not only for the safety of your computer but also for the safety of your WordPress site. There are a variety of anti-malware products available and you must decide which one will work best for your situation. Some are continuously working in the background; keeping your computer and site safe. Others will need to be periodically run to check for any form of malware that may be lurking.
 
 Each program comes with a different idea of how often they need to be run; monthly, weekly or daily. It would be best to set a schedule and make it a habit of running it at least on a weekly cycle. Always be consistent in monitoring your computer for Malware.
 
-### Use Reputible Hosting
+### Use Reputable Hosting
 
 Hosting providers are responsible for protecting the security of their clients at the server level. Your host should be proactively searching for and plugging security holes. This is particularly important on low-budget "shared hosting" providers where hundreds or thousands of sites share the same server. In some situations, one "bad neighbor" can cause all of the sites to get hacked - even if you did everything right. That's why picking the right host is so important.
 

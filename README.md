@@ -45,7 +45,7 @@ One of the easiest, but most important ways of keeping your site secure is to be
 
 This is extremely important for you to remember if you are working from a shared or public computer. If you fail to log out anyone is able to access your account just by going back and viewing your browser history. If they do so, they will be able to access your WordPress.com Dashboard as well. 
 
-Always be sure to protect your account by signing out every time you are finished working. To do so;  all you need do is click on your Gravatar in the upper right corner, this will open your Profile page, and then you hit the "sign out button" in the left corner under your Gravatar. Or, If you are on your blog dashboard you can hover over your Gravatar on the gray toolbar at the top right and click  "Sign Out". 
+Always be sure to protect your account by signing out every time you are finished working. To do so;  all you need do is click on your Gravatar in the upper right corner, this will open your Profile page, and then you hit the "sign out button" in the left corner under your Gravatar. Or, If you are on your blog dashboard you can hover over your Gravatar on the gray toolbar at the top right and click "Sign Out". 
 
 ### Use Strong Passwords
 
@@ -69,7 +69,7 @@ Anti-malware is a must; not only for the safety of your computer but also for th
 
 Each program comes with a different idea of how often they need to be run; monthly, weekly or daily. It would be best to set a schedule and make it a habit of running it at least on a weekly cycle. Always be consistent in monitoring your computer for Malware.
 
-### Use Reputible Hosting
+### Use Reputable Hosting
 
 Hosting providers are responsible for protecting the security of their clients at the server level. Your host should be proactively searching for and plugging security holes. This is particularly important on low-budget "shared hosting" providers where hundreds or thousands of sites share the same server. In some situations, one "bad neighbor" can cause all of the sites to get hacked - even if you did everything right. That's why picking the right host is so important.
 
@@ -78,7 +78,7 @@ Hosting providers are responsible for protecting the security of their clients a
 There are various plugins available through WordPress which are exclusively for security purposes. Each plugin is unique and their features used to keep the site safe are distinct in their own way. It is recommended that you do a thorough study of each of them before making a final decision.
 
 *   [WordFence](https://wordpress.org/plugins/wordfence): This is one of the most popular security plugins. It continuously checks for malware infections and will notify you if anything is found. WordFence is a free plugin. There are also a few advanced features which are available for a price.
-*   [BulletProof Security](https://wordpress.org/plugins/bulletproof-security/): This is another popular choice. Bulletproof adds firewall security, login security, database security,  and much more. It too is free, but also comes with the option of additional security for an added cost.
+*   [BulletProof Security](https://wordpress.org/plugins/bulletproof-security/): This is another popular choice. Bulletproof adds firewall security, login security, database security, and much more. It too is free, but also comes with the option of additional security for an added cost.
 *   [Sucuri Security](https://wordpress.org/plugins/sucuri-scanner/): Sucuri offers various security features, including malware scanning, security activity auditing, blacklist monitoring, and even a website firewall. Sucuri is not a free service, you will need to pay for using their service.
 *   [iThemes Security](https://wordpress.org/plugins/better-wp-security/): iThemes Security claims to offer over 30 ways to secure and protect a WordPress website. It does come at a cost though.
 *   [Acunetix WP Security](https://wordpress.org/plugins/wp-security-scan/): The Acunetix plugin helps to secure your WordPress website and will suggest various guidelines to improve the security of your site.
